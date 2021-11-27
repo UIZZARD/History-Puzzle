@@ -5,14 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Window;
+import android.view.WindowManager;
+
+import java.util.Objects;
 
 public class LoadingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // will hide the title
+        Objects.requireNonNull(getSupportActionBar()).hide(); // hide the title bar
         setContentView(R.layout.activity_loading);
 
+        // create the impression of splash screen
+        final int splashScreenDelayTime = 4000; // in milliseconds
         Handler handler =new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -20,6 +28,6 @@ public class LoadingActivity extends AppCompatActivity {
                 startActivity(new Intent(LoadingActivity.this, MainActivity.class));
                 finish();
             }
-        }, 4000);
+        }, splashScreenDelayTime);
     }
 }
