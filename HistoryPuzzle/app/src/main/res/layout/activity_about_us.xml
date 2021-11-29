@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/txt_UIZZARD"
+        android:layout_width="238dp"
+        android:layout_height="41dp"
+        android:text="UIZZARD"
+        android:textColor="#3C3C3C"
+        android:textColorHighlight="#4C4C4C"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/desc_AboutUs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/desc_AboutUs"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:text="UIZZARD Game Studio is a general partnership company formed by four raring students from PUP Manila - Andreana, Krisma, Vina, and Junius. The desire to provide games that are frolic and worthwhile united the students together. UIZZARD was derived from the term Wizard, someone skilled in magic and has a capability to execute exceptional deeds. Considering this, UIZZARD Game Studio aims to develop mobile games that are notable while amusing for everybody to enjoy."
+        android:textColor="#222222"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/MissionVision"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="388dp"
+        android:text="Mission and Vision"
+        android:textColor="#3C3C3C"
+        android:textColorHighlight="#4C4C4C"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/desc_MissionVision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/desc_MissionVision"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:text="Mission\nOur mission is to enchant people through fun and games, and enhance individual's gaming experience by creating immersive, memorable, and high quality games."
+        android:textColor="#222222"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+</androidx.constraintlayout.widget.ConstraintLayout>
